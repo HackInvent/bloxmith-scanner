@@ -1,0 +1,15 @@
+{
+  "kind": "scanner", "version": "0.1.0",
+  "bloxsmith_compatibility": ["1.0.9"], "tested_with_bloxsmith": "1.0.9",
+  "title": "Scanner", "description": "Scans with an installed SANE device and publishes a complete PDF file.",
+  "locales": {"en": "locales/en.json", "fr": "locales/fr.json"},
+  "ports": {"inputs": [], "outputs": [{"id": 1, "name": "pdf", "title": "PDF", "emits": ["file/path"], "multiplicity": "many"}]},
+  "config": {"device": "", "color": "color", "resolution": 300, "source": "flatbed", "paper": "A4", "output_directory": "", "filename_prefix": "scan", "max_pages": 10, "timeout_sec": 120, "max_scan_mb": 256},
+  "port_capabilities": {"can_add_inputs": false, "can_add_outputs": false, "allow_required_input": false, "default_required": false},
+  "runtime": {"initial_state": "waiting", "runtime_executable": true, "active_worker": true, "generic_source": true, "centralized_executor": "generic", "centralized_dependency_mode": "all_inputs"},
+  "ui_assets": {
+    "modal": [{"kind": "css", "path": "assets/properties.css"}, {"kind": "js", "path": "assets/properties.js"}],
+    "inspector_panel": [{"kind": "css", "path": "assets/properties.css"}, {"kind": "js", "path": "assets/properties.js"}],
+    "node_card": [{"kind": "css", "path": "assets/card.css"}, {"kind": "js", "path": "assets/card.js"}]
+  }
+}
