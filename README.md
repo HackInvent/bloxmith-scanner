@@ -15,8 +15,6 @@ Verified BloxSmith versions: **1.0.9** (bundled-block tests; see [test evidence]
 
 [![Scanner — cyan pixel-art module scanning a paper page into a digital document](media/thumbnail.webp)](media/cover.png)
 
-*Concept illustration of the block's function, not a Studio screenshot. [Artwork and generation prompt](media/README.md).*
-
 ## Requirements
 
 - Linux on the BloxSmith host, with `scanimage` (SANE utilities), the correct backend
